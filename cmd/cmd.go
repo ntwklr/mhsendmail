@@ -43,6 +43,7 @@ func Go() {
 	// override defaults from cli flags
 	flag.StringVar(&smtpAddr, "smtp-addr", smtpAddr, "SMTP server address")
 	flag.StringVarP(&fromAddr, "from", "f", fromAddr, "SMTP sender")
+	flag.BoolP("long-bs", "bs", true, "Ignored. This flag exists for sendmail compatibility.")
 	flag.BoolP("long-i", "i", true, "Ignored. This flag exists for sendmail compatibility.")
 	flag.BoolP("long-o", "o", true, "Ignored. This flag exists for sendmail compatibility.")
 	flag.BoolP("long-t", "t", true, "Ignored. This flag exists for sendmail compatibility.")
